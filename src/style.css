@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#overall-page {
+    border: 2px solid black;
+}
+
+/*                                                   Styling for Large Screen Sizes                                           */
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: #c4f5e0; */
+    /* background: linear-gradient(to bottom, rgb(175, 248, 218) 0%, rgb(130, 190, 162) 50%, rgb(145, 243, 206) 100%); */
+}
+
+.logo img {
+    height: 120px;
+    width: 350px;
+    padding: 5px 0;
+    mix-blend-mode: multiply;
+}
+
+
+/* Styling for Toggle day/night mode  */
+
+
+/* Unordered List  */
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    color: black;
+}
+
+.nav-links li {
+    padding: 15px;
+    transition: all .3s linear;
+}
+
+.nav-links li:hover {
+    transform: scaleX(1.1);
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all .2s ease-in;
+}
+
+.nav-links li a:hover {
+    transform: scale(1.1);
+    border-bottom: 5px solid black;
+}
+
+.hamburger-icon {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+/* Hiding the checkbox default styling */
+.hamburger-icon input[type="checkbox"] {
+    appearance: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                                   Styling for Medium Screen Sizes                                           */
+@media (max-width:1200px) {
+
+    .toggle-btn {
+        display: none;
+    }
+
+    .navbar nav {
+        background-color: rgb(196, 193, 193);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 75px;
+        width: 250px;
+        padding: 5px 0;
+    }
+
+    /* Unordered List  */
+    .nav-links {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+        color: black;
+    }
+
+    .nav-links li {
+        padding: 10px;
+    }
+
+    .nav-links li a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                                             Styling for Mobile Devices                                              */
+@media (max-width:768px) {
+
+    .navbar nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightblue;
+    }
+
+    .nav-links li {
+        text-align: center;
+        list-style: none;
+        padding: 15px;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .nav-links li a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 5px;
+        /* color: white; */
+    }
+
+    .logo img {
+        padding: 10px 20px;
+        height: 75px;
+        width: 150px;
+    }
+
+
+
+    /*Styling for Main section starts here  */
+    .info {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main main h3 {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    #main main h1 {
+        font-size: 40px;
+    }
+
+    #main main p {
+        margin-bottom: 30px;
+    }
+
+    #container1 {
+        text-align: center;
+        border: 2px solid green;
+    }
+
+    .profile-pic {
+        padding: 30px;
+    }
+
+    .profile-pic img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50px;
+        mix-blend-mode: multiply;
+        border: 5px solid black;
+    }
+
+
+    /* Styling for social-icons  */
+    .social-icons {
+        margin-bottom: 10px;
+    }
+
+    .social-icons ul {
+        display: flex;
+    }
+
+    .social-icons ul li {
+        margin: 0 5px;
+        border-radius: 40px;
+    }
+
+
+    .social-icons ul li i {
+        font-size: 40px;
+        padding: 8px;
+        transition: all .3s ease-in-out;
+    }
+
+    .social-icons ul li i:hover {
+        border-radius: 30px;
+        box-shadow: gray 5px 0 10px;
+    }
+
+    .btn button {
+        margin: 30px 0;
+        padding: 20px;
+        border-radius: 40px;
+        font-size: large;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all .3s ease-in;
+    }
+
+    .btn button:hover {
+        box-shadow: gray 5px 0 10px;
+    }
+
+    .nav-links {
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+    
+    
+    .fa-x {
+        cursor: pointer;
+        display: none;
+        padding: 10px 20px;
+        font-size: 30px;
+    }
+    .fa-bars{
+        cursor: pointer;
+        padding: 10px 20px;
+        color: black;
+        font-size: 30px;
+    }
+
+    .navbar nav:has(.hamburger-icon input[type="checkbox"]:checked) .nav-links {
+        margin-top: 1rem;
+        height: 35vh;
+    }
+
+    .navbar nav:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    .navbar nav:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+        display: inline-block;
+    }
+}
