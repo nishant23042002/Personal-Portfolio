@@ -204,15 +204,3 @@ label:after {
 
 
 
-
-<body>
-  <!-- Checkbox for toggling -->
-  <input type="checkbox" id="toggle">
-
-  <!-- Label for the checkbox -->
-  <label for="toggle">Toggle Content</label>
-
-  <!-- Content to show/hide -->
-  <div id="content">
-    <p>This is the content that toggles on and off.</p>
-  </div>
