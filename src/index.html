@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    <input type="checkbox" id="invert">
+    <div class="toggle">
+        <span class="day">DAY</span>
+        <span class="night">Night</span>
+    </div>
     <div id="overall-page">
         <div id="container">
             <div class="navbar">
@@ -28,10 +33,10 @@
                     </div>
 
                     <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="#main">Home</a></li>
+                        <li><a href="#container2">About</a></li>
+                        <li><a href="#container3">Skills</a></li>
+                        <li><a href="#container4">Services</a></li>
                         <li><a href="#">Projects</a></li>
                     </ul>
                 </nav>
@@ -46,14 +51,14 @@
                         </div>
                         <div class="profile-pic">
                             <img src="../images/Profile Picture.jpg" alt="My Profile">
-                        </div>
-                        <div class="social-icons">
-                            <ul type="none">
-                                <li><i class="fa-brands fa-linkedin" style="color: #0850f7;"></i></li>
-                                <li><i class="fa-brands fa-square-instagram" style="color: #f90bc5;"></i></li>
-                                <li><i class="fa-brands fa-square-facebook" style="color: #021ff7;"></i></li>
-                                <li><i class="fa-brands fa-square-x-twitter" style="color: #000205;"></i></li>
-                            </ul>
+                            <div class="social-icons">
+                                <ul type="none">
+                                    <li><i class="fa-brands fa-linkedin" style="color: #0850f7;"></i></li>
+                                    <li><i class="fa-brands fa-square-instagram" style="color: #f90bc5;"></i></li>
+                                    <li><i class="fa-brands fa-square-facebook" style="color: #021ff7;"></i></li>
+                                    <li><i class="fa-brands fa-square-x-twitter" style="color: #000205;"></i></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="btn">
                             <button>Download CV</button>
@@ -62,7 +67,126 @@
                 </div>
             </div>
         </div>
-    </div>
+
+
+        <div id="container2">
+            <div id="main-content">
+                <div class="picture">
+                    <img src="../images/Profile Picture.jpg" alt="profile-picture">
+                </div>
+                <div class="information">
+                    <h1>About <span>Me</span></h1>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro neque voluptates corporis eaque
+                        magni sed deleniti illum aperiam, quasi ipsum incidunt libero. Tempora architecto nobis minus
+                        inventore perspiciatis laborum modi praesentium distinctio voluptatem, debitis, rerum qui dicta,
+                        suscipit eveniet cum repudiandae? Quisquam atque delectus nesciunt, reiciendis nisi sint
+                        similique fugit.</p>
+                    <input type="checkbox" id="toggle">
+                    <label class="label" for="toggle">Read More</label>
+                    <div id="content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur mollitia ipsum
+                            quo, voluptatem velit et explicabo quibusdam totam deleniti atque.</p>
+                    </div>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="container3">
+            <div id="skills-container">
+                <h1>My Skills</h1>
+                <div class="skills">
+                    <div class="skills-list">
+                        <h3>HTML</h3>
+                        <div class="progress">
+                            <div class="html-bar">70%</div>
+                        </div>
+                        <h3>CSS</h3>
+                        <div class="progress">
+                            <div class="css-bar">75%</div>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <div class="progress">
+                            <div class="js-bar">40%</div>
+                        </div>
+                        <h3>React</h3>
+                        <div class="progress">
+                            <div class="react-bar">40%</div>
+                        </div>
+                        <h3>MongoDB</h3>
+                        <div class="progress">
+                            <div class="mongo-bar">30%</div>
+                        </div>
+                        <!-- <label>HTML: <progress max="100" value="70">70%</progress></label> -->
+                    </div>
+                    <div class="soft-skills">
+                        <div>
+                            <div class="progress-circle1">
+                                <span class="progress-text">75%</span>
+                            </div>
+                            <h4>Team Work</h4>
+                            <div class="progress-circle2">
+                                <span class="progress-text">55%</span>
+                            </div>
+                            <h4>Creativity</h4>
+                        </div>
+                        <div>
+                            <div class="progress-circle3">
+                                <span class="progress-text">70%</span>
+                            </div>
+                            <h4>Problem Solving</h4>
+                            <div class="progress-circle4">
+                                <span class="progress-text">50%</span>
+                            </div>
+                            <h4>Communication</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="container4">
+            <div class="services">
+                <h1>Services/Certification</h1>
+                <div class="card-container">
+                    <div class="card1">
+                        <div>
+                            <img id="certificate1" src="../images/" alt="certificate">
+                            <h2>Web Development</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fuga autem perferendis
+                                dolorem quia quibusdam ea minus officiis, iste dignissimos.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquam quae quos officia
+                                doloribus sed minus ratione, quam reprehenderit a?</p>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img id="certificate2" src="../images/" alt="certificate">
+                            <h2>Web Development</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fuga autem perferendis
+                                dolorem quia quibusdam ea minus officiis, iste dignissimos.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquam quae quos officia
+                                doloribus sed minus ratione, quam reprehenderit a?</p>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div>
+                            <img id="certificate3" src="../images/" alt="certificate">
+                            <h2>Web Development</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fuga autem perferendis
+                                dolorem quia quibusdam ea minus officiis, iste dignissimos.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquam quae quos officia
+                                doloribus sed minus ratione, quam reprehenderit a?</p>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

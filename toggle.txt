@@ -170,3 +170,49 @@ label:after {
 
 
 
+
+  <style>
+    /* Initially hide the content */
+    #content {
+      display: none;
+    }
+
+    /* Show the content when the checkbox is checked */
+    #toggle:checked ~ #content {
+      display: block;
+    }
+
+    /* Hide the checkbox itself (optional) */
+    #toggle {
+      display: none;
+    }
+
+    /* Style the label as a button */
+    label {
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      display: inline-block;
+      text-align: center;
+    }
+  </style>
+</head>
+
+
+
+
+
+<body>
+  <!-- Checkbox for toggling -->
+  <input type="checkbox" id="toggle">
+
+  <!-- Label for the checkbox -->
+  <label for="toggle">Toggle Content</label>
+
+  <!-- Content to show/hide -->
+  <div id="content">
+    <p>This is the content that toggles on and off.</p>
+  </div>
