@@ -499,7 +499,7 @@ input[type="checkbox"]:checked~* .skills-list{
 
 /* styling for services section  */
 #container4 {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -517,9 +517,14 @@ input[type="checkbox"]:checked~* .skills-list{
     text-align: center;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 20px;
     border: none;
+}
+.card-container img{
+    width: 300px;
+    padding: 10px;
 }
 
 .card-container h2 {
@@ -530,7 +535,7 @@ input[type="checkbox"]:checked~* .skills-list{
     padding: 0 10px;
 }
 
-.card-container button {
+.card-container button{
     margin: 15px 0;
     padding: 15px;
     border-radius: 30px;
@@ -542,11 +547,13 @@ input[type="checkbox"]:checked~* .skills-list{
     background-color: #ccd5ae;
     color: aliceblue;
     box-shadow: #ccd5ae 5px 0 5px;
+    cursor: pointer;
 }
+
 .card1 {
     border-radius: 30px;
     width: 25vw;
-    height: 40vh;
+    height: auto;
     transition: all .5s ease-in-out;
     background-color: #faedcd;
     display: flex;
@@ -555,14 +562,14 @@ input[type="checkbox"]:checked~* .skills-list{
 .card2 {
     border-radius: 30px;
     width: 25vw;
-    height: 40vh;
+    height: auto;
     transition: all .5s ease-in-out;
     background-color: #faedcd;
 }
 
 .card3 {
     width: 25vw;
-    height: 40vh;
+    height: auto;
     border-radius: 30px;
     transition: all .3s ease-in-out;
     background-color: #faedcd;
@@ -616,8 +623,11 @@ input[type="checkbox"]:checked~* .skills-list{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
-
+.cards p{
+    padding: 10px;
+}
 .projects {
     width: 300px;
     height: 300px;
@@ -628,15 +638,61 @@ input[type="checkbox"]:checked~* .skills-list{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* position: relative; */
+    position: relative;
     margin: 0 20px;
+    padding: 10px;
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
 .projects:hover{
     transform: scaleY(1.1);
-    box-shadow: 0 25px 25px #faedcd;
 }
+.projects .image-box{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+.projects .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    transition: all .5s ease-in-out;
+    border-radius: 10px;
+}
+
+.text-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+.projects:hover .text-content{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* styling the scrollbar  */
 .slider::-webkit-scrollbar {
@@ -866,6 +922,10 @@ textarea {
 
 
     /* styling for services section  */
+    .card-container{
+        flex-wrap: wrap;
+        padding: 10px 50px;
+    }
     .card-container h2 {
         padding: 10px 0;
     }
@@ -1418,17 +1478,12 @@ textarea {
         padding: 30px;
     }
 
-    #certificate1,
-    #certificate2,
-    #certificate3 {
-        display: none;
-    }
-
     .card-container {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
         padding: 20px;
@@ -1508,7 +1563,7 @@ textarea {
 
 
 /*                                                             Styling for Extra small Devices                                              */
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .profile-pic {
         padding: 0;
     }
@@ -1572,11 +1627,14 @@ textarea {
         /* padding: 0; */
     }
 
-    .card1,
+    .card-container img{
+        width: 250px;
+    }
+    /* .card1,
     .card2,
     .card3 {
         width: 75vw;
-    }
+    } */
 
     .form-container {
         width: 260px;
@@ -1586,5 +1644,11 @@ textarea {
         border: 1px solid #ccc;
         border-radius: 8px;
         background-color: #e9edc9;
+    }
+}
+
+@media (max-width: 360px){
+    .card-container img{
+        width: 200px;
     }
 }
